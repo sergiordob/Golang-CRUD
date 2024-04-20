@@ -2,7 +2,9 @@
 Repository dedicated to a simple Golang project to contextualize CRUD operations, using PostgreSQL
 ---------------------------------------------------------------------------------------------------
 
-!https://i.imgur.com/gsM4z9x.png
+<p align="center">
+  <img src="./CRUD.png" alt="Image">
+</p>
 
 
 # Online Store
@@ -11,7 +13,7 @@ This is a simple online store project implemented in Go.
 
 ## About the Project
 
-This project is a simple online store that allows users to view, create, update, and delete products.
+This project is a simple online store that allows users to view, create,read, update, and delete products.
 
 ## Technologies Used
 
