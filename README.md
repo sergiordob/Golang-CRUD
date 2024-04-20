@@ -2,7 +2,9 @@
 Repository dedicated to a simple Golang project to contextualize CRUD operations, using PostgreSQL
 ---------------------------------------------------------------------------------------------------
 
-!https://i.imgur.com/gsM4z9x.png
+<p align="center">
+  <img src="./CRUD.png" alt="Image">
+</p>
 
 
 # Online Store
