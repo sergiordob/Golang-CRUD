@@ -13,7 +13,7 @@ This is a simple online store project implemented in Go.
 
 ## About the Project
 
-This project is a simple online store that allows users to view, create, update, and delete products.
+This project is a simple online store that allows users to view, create,read, update, and delete products.
 
 ## Technologies Used
 
