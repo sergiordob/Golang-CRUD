@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <nav class="navbar navbar-light" style="background-color: #00ADD8; color: white;"><a class="navbar-brand" href="/" style="color: white;">Developed by Sergio Oliveira</a></nav>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GOLANG POSTGRESQL CRUD</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <style>
+            /* Fonte personalizada */
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+            body {
+                font-family: 'Roboto', sans-serif;
+            }
+
+            /* Efeitos hover para as linhas da tabela */
+            tbody tr {
+                transition: background-color 0.2s ease;
+            }
+            tbody tr:hover {
+                background-color: #B2DFFC;
+            }
+
+            /* Estilização do botão */
+            .btn-primary {
+                background-color: #00ADD8;
+                border-color: #00ADD8;
+                box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Adicionando sombra */
+            }
+            .btn-primary:hover {
+                background-color: #008DB6;
+                border-color: #008DB6;
+            }
+
+            /* Adicionando linhas verticais e horizontais na tabela */
+            table {
+                border-collapse: collapse;
+            }
+
+            th, td {
+                border: 1px solid #add8e6; /* Cor azul claro */
+                padding: 8px;
+            }
+
+            /* Efeito de animação para o título */
+            @keyframes pulse {
+                0% {
+                    transform: scale(1);
+                }
+                50% {
+                    transform: scale(1.1);
+                }
+                100% {
+                    transform: scale(1);
+                }
+            }
+            .animated-title {
+                animation: pulse 2s infinite;
+            }
+        </style>
+        <script src="main.js"></script>
+    </head>
+
+    <body style="background-color: #E6F1F6;">
+        <div class="container">
+            <section class="card" style="border-color: #00ADD8;">
+            <h1 class="text-center my-4 animated-title" style="color: #00ADD8;">GOLANG POSTGRESQL CRUD</h1>
+            <table class="table">
+                <thead style="background-color: #00ADD8; color: white;">
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    {{range .}}
+                    <tr>
+                        <td>{{.Nome}}</td>
+                        <td>{{.Descricao}}</td>
+                        <td>{{.Preco}}</td>
+                        <td>{{.Quantidade}}</td>
+                    </tr>
+                    {{end}}
+                </tbody>
+            </table>
+        </div>
+        </section>
+        <div class="card-footer d-flex justify-content-center" style="background-color: #00ADD8;">
+            <a href="/create" class="btn btn-primary mb-2 mx-1">Create a product</a>
+            <a href="/read" class="btn btn-primary mb-2 mx-1">Read a product</a>
+            <a href="/update" class="btn btn-primary mb-2 mx-1">Update a product</a>
+            <a href="/delete" class="btn btn-primary mb-2 mx-1">Delete a product</a>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </body>
+</html>

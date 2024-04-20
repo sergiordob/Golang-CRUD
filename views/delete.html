@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px #ccc;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .form-group input:focus {
+            outline: none;
+            border-color: #00ADD8;
+        }
+        .btn-primary {
+            background-color: #00ADD8;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn-primary:hover {
+            background-color: #008DB6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="card" style="border-color: #00ADD8;">
+            <h1 class="text-center my-4" style="color: #00ADD8;">Delete a product</h1>
+            <form action="/delete" method="post">
+                <div class="form-group">
+                    <label for="ID">ID</label>
+                    <input type="number" class="form-control" id="ID" name="ID" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
